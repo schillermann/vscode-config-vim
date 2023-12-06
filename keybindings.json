@@ -1,0 +1,76 @@
+[
+    {
+        "key": "l",
+        "command": "cursorRight",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "h",
+        "command": "cursorLeft",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "k",
+        "command": "cursorUp",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "j",
+        "command": "cursorDown",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.files.toggleActiveEditorReadonlyInSession"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorWordStartLeft",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "cursorWordLeftSelect",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorWordStartRight",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorWordRightSelect",
+        "when": "editorReadonly && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorMove",
+        "args": {
+          "to": "up",
+          "by": "line",
+          "value": 10
+        },
+        "when": "editorReadonly && editorTextFocus"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "cursorMove",
+        "args": {
+          "to": "down",
+          "by": "line",
+          "value": 10
+        },
+        "when": "editorReadonly && editorTextFocus"
+      },
+      {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorReadonly && editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+      },
+      {
+        "key": "g b",
+        "command": "workbench.action.navigateBack",
+        "when": "editorReadonly && canNavigateBack"
+      },
+]
